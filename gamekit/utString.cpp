@@ -130,6 +130,46 @@ void utStringUtils::replace( utString &in, const utString &from, const utString 
 	}
 }
 
+//---------- copied from OGRE3D - OgreString.h --------------------------
+bool utStringUtils::startsWith(const utString& str, const utString& pattern, bool lowerCase)
+{
+    size_t thisLen = str.length();
+    size_t patternLen = pattern.length();
+    if (thisLen < patternLen || patternLen == 0)
+        return false;
+
+    utString startOfThis = str.substr(0, patternLen);
+    if (lowerCase)
+    {
+    	utString lowerCasePattern = pattern;
+    	utStringUtils::lower(lowerCasePattern);
+        utStringUtils::lower(startOfThis);
+        return (startOfThis == lowerCasePattern);
+    }
+
+    return (startOfThis == pattern);
+}
+//-----------------------------------------------------------------------
+bool utStringUtils::endsWith(const utString& str, const utString& pattern, bool lowerCase)
+{
+    size_t thisLen = str.length();
+    size_t patternLen = pattern.length();
+    if (thisLen < patternLen || patternLen == 0)
+        return false;
+
+    utString endOfThis = str.substr(thisLen - patternLen, patternLen);
+    if (lowerCase)
+    {
+    	utString lowerCasePattern = pattern;
+    	utStringUtils::lower(lowerCasePattern);
+    	utStringUtils::lower(endOfThis);
+        return (endOfThis == lowerCasePattern);
+    }
+
+    return (endOfThis == pattern);
+}
+
+//------------------------ end of ogre---------------------------------
 
 utString utStringFormat(const char* format, ...)
 {

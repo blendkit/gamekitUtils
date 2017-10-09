@@ -55,6 +55,11 @@ public:
 	static void upper( utString &str );
 	static utString upper( const utString &str );
 	static void replace( utString &in, const utString &from, const utString &to );
+    // ----- copied from Ogre 3d ---------------------------
+	static bool startsWith(const utString& str, const utString& pattern, bool lowerCase = true);
+    static bool endsWith(const utString& str, const utString& pattern, bool lowerCase = true);
+    // -----------------------------------------------------
+
 };
 
 
