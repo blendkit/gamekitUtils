@@ -43,10 +43,9 @@
    email: m-mat @ math.sci.hiroshima-u.ac.jp (remove space)
 */
 
-#include "utRandom.h"
-
 #include <float.h>
 #include <math.h>
+#include <ut/utRandom.h>
 
 /* Period parameters */
 #define N 624

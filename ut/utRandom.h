@@ -28,7 +28,7 @@
 #ifndef UTRANDOM_H
 #define UTRANDOM_H
 
-#include "utCommon.h"
+#include <ut/utCommon.h>
 
 class utRandomNumberGenerator
 {

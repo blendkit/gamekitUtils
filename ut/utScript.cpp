@@ -22,7 +22,7 @@
   3. This notice may not be removed or altered from any source distribution.
 -------------------------------------------------------------------------------
 */
-#include "utScript.h"
+#include <ut/utScript.h>
 #include "string.h"
 #include "stdio.h"
 #include "stdlib.h"

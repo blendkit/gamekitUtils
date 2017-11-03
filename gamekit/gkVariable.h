@@ -30,8 +30,8 @@
 
 #include "gkMiniMath.h"
 #include "gkValue.h"
-#include "utString.h"
-#include "utTypes.h"
+#include <ut/utString.h>
+#include <ut/utTypes.h>
 
 
 class gkVariable

@@ -22,13 +22,13 @@
   3. This notice may not be removed or altered from any source distribution.
 -------------------------------------------------------------------------------
 */
-#include "utString.h"
 #include <iomanip>
 #include <sstream>
 #include <cctype>
 #include <algorithm>
 #include <stdio.h>
 #include <stdarg.h>
+#include <ut/utString.h>
 
 const utString utStringUtils::BLANK = "";
 

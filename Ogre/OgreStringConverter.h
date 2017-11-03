@@ -31,8 +31,8 @@ THE SOFTWARE.
 
 #include <iostream>
 
-#include "../gkMiniMath.h"
-#include "../utString.h"
+#include <gamekit/gkMiniMath.h>
+#include <ut/utString.h>
 
 #define _OgreExport
 

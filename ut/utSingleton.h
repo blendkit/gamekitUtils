@@ -27,7 +27,7 @@
 #ifndef _utSingleton_h_
 #define _utSingleton_h_
 
-#include "utCommon.h"
+#include <ut/utCommon.h>
 
 
 // This singleton stuff may need to be context based.

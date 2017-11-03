@@ -25,8 +25,9 @@
 #ifndef _utMemoryPool_h_
 #define _utMemoryPool_h_
 
-#include "utCommon.h"
-#include "utTypes.h"
+#include <ut/utCommon.h>
+#include <ut/utTypes.h>
+#include <cstdio>
 
 // MemoryPool adapted from PocoC++
 

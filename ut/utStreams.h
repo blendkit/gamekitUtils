@@ -26,7 +26,7 @@
 #define _utStreams_h_
 
 
-#include "utString.h"
+#include <ut/utString.h>
 
 
 class utStream

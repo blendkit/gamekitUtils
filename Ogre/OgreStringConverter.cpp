@@ -26,12 +26,12 @@ THE SOFTWARE.
 -----------------------------------------------------------------------------
 */
 
+#include <ut/utString.h>
 #include "OgreStringConverter.h"
 #include <string>       // std::string
 #include <iostream>
 #include <sstream>
 
-#include "../utString.h"
 using namespace std;
 
 namespace Ogre {

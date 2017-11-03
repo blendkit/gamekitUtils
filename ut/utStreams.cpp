@@ -22,12 +22,11 @@
   3. This notice may not be removed or altered from any source distribution.
 -------------------------------------------------------------------------------
 */
-#include "utStreams.h"
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <memory.h>
+#include <ut/utStreams.h>
 
 #ifdef _MSC_VER
 #pragma warning(disable : 4996)

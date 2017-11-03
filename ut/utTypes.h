@@ -27,8 +27,8 @@
 #ifndef _utTypes_h_
 #define _utTypes_h_
 
-#include "utCommon.h"
 #include <memory.h>
+#include <ut/utCommon.h>
 
 #define _UT_CACHE_LIMIT 999
 

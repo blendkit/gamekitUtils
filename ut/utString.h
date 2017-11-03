@@ -26,10 +26,10 @@
 #define _utString_h_
 
 #include <string.h>
+#include <ut/utCommon.h>
+#include <ut/utTypes.h>
 #include <string>
 
-#include "utCommon.h"
-#include "utTypes.h"
 
 #define utStrlen            strlen
 #define utStrcpy            strncpy

@@ -24,11 +24,15 @@
 */
 
 #pragma once
-#include "utString.h"
+#include <ut/utString.h>
+
+
 
 class utVector2{
 public:
+	utVector2() : x(0),y(0){}
 	utVector2(float x,float y) : x(x),y(y){}
+	utVector2(float (&arr)[2]) : x(arr[0]),y(arr[1]){}
 
 	float x,y;
 
@@ -37,7 +41,9 @@ public:
 
 class utVector3{
 public:
+	utVector3() : x(0),y(0),z(0){}
 	utVector3(float x,float y,float z) : x(x),y(y),z(z){}
+	utVector3(float (&arr)[3]) : x(arr[0]),y(arr[1]),z(arr[2]){}
 
 	float x,y,z;
 	static utVector3 ZERO ;
@@ -45,7 +51,9 @@ public:
 
 class utVector4{
 public:
+	utVector4() : x(0),y(0),z(0),w(0){}
 	utVector4(float x,float y,float z,float w) : x(x),y(y),z(z),w(w){}
+	utVector4(float (&arr)[4]) : x(arr[0]),y(arr[1]),z(arr[2]),w(arr[3]){}
 
 	float x,y,z,w;
 	static utVector4 ZERO;
